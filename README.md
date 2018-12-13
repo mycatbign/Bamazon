@@ -1,30 +1,32 @@
 # Bamazon
 
-# Description:
-Bamazon is a basic node app storefront that uses inquirer to collect input from Customers or Managers and executes basic POS commands to a backend MySQL database. Functions supported include:
+## Description:
+Bamazon is a basic node app storefront that uses inquirer to collect input from Customers or Managers and executes basic POS commands to a backend MySQL database. To see Bamazon in action please go [here](https://drive.google.com/open?id=1u0cVOxjD-967PL2P9V4aIi-B4cKdjyiB):
 
-## Customer Commands
+Functions supported include:
+
+### Customer Commands
 * Purchase an Item - Allows purchase of items from inventory
 * Quit - gracefully exist console
 
-## Manager Commands
+### Manager Commands
 * View Products for Sale - Display complete list of products onhand with quantities
 * View Low Inventory - Display list of low inventory items (onhand qty less than 5)
 * Add to Inventory - Add inventory to the database 
 * Add New Product - Add new products to inventory
 * Quit - gracefully exit console
 
-# Important Setup Notes
+## Important Setup Notes
 
-## MySQl Database
+### MySQl Database
 This application requires a MySQL database to be set up. The schema for the database is provided in GitHub and contains a small sample set of data that can be used to start the application. IMPORTANT - To see Bamazon in action you will need to download the code and provide your own MySQL access key. Update the file bamazon_db_connect.js with your key. Also note there is one of these connect files in each of the Customer and Manager folders.
 
-# Requirements and Technology Used:
+## Requirements and Technology Used:
   dependencies include: 
   - inquirer
   - MySQL - IMPORTANT - To see Bamazon in action you will need to download the code and provide your own database and MySQL access key.
   
-# Screenshots of Supported Commands:
+## Screenshots of Supported Commands:
 
 ### Customer - Purchasing a Product
 This image demonstrates a customer successfully completing a purchase of a product:
@@ -46,9 +48,8 @@ This image demonstrates a Manager adding quantity to a specific product in the i
 This image demonstrates a Manager adding a new product to inventory:
 ![](./Mgr-Add-Product.PNG)
 
-# Remaining Tasks
+## Remaining Tasks
 - [ ] Overall - need to use environment variable for MySQL key 
 - [ ] Overall - improve display back to user
-- [ ] Overall - code can be much dryer
+- [ ] Overall - code can be dryer
 - [ ] Manager - validation - need to check for duplicates when adding new product
-- [ ] Supervisor command need to be developed
